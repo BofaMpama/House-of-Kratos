@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Header from './Header.svelte';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 
@@ -8,5 +9,9 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
-
-{@render children?.()}
+<div class="container">
+	<Header />
+	<main>
+			{@render children()}
+	</main>
+</div>
