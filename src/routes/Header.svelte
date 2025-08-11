@@ -58,6 +58,11 @@
         margin: 1em;
 		padding: 0.5em 1em 0.5em 1em;
         align-items: center;
+		position: fixed;
+		top: 0%;
+		left: 5%;
+		width: 90%;
+		z-index: 100000;
 	}
 
 	.corner {
@@ -140,6 +145,8 @@
 	@media (max-width: 600px){
 		header{
 			padding: 0.5em 0em;
+			width: 95%;
+			left:2.5%;
 		}
 	}
 </style>
