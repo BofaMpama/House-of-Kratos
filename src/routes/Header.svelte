@@ -12,7 +12,7 @@
 </script>
 
 
-<header>
+<header style="@media (max-width: 600px) width: 100%; margin-left: 0;">
 	
 	
 	<div class="corner">
