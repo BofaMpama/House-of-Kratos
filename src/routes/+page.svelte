@@ -4,6 +4,7 @@
   import idea2 from '$lib/assets/idea2.png';
   import idea3 from '$lib/assets/puzzle.png';
   import idea4 from '$lib/assets/teamwork.png';
+  import groupPhoto from '$lib/assets/group1.jpg';
 
 </script>
 
@@ -19,7 +20,7 @@
 
 
 
-<section class="section cards">
+<section class="section1 cards">
 
   <input type="radio" id="radio-1" name="radio-card" checked>
   <article class="card" style="--angle:4deg">
@@ -86,6 +87,24 @@
 
 
  
+</section>
+
+<section class="section2">
+<span>About Us</span>
+<h2 style="font-size: 50px;">Creative Powerhouse.<br/>
+Strategic Partner.<br/>
+Impact Ally.</h2>
+<p>We work with people and organizations committed to solving problems sustainably.
+</p>
+
+  <li>Visionary startups ready to disrupt the norm
+</li>
+<li> Purpose-driven founders who lead with empathy</li>
+<li>Social enterprises & NGOs creating real, measurable impact</li>
+<li>Forward-thinking teams who value creativity, strategy, and collaboration</li>
+<li>People-first brands that care deeply about their communities</li>
+<p>If any of these sound like you, we want to work with you!</p>
+<button class="btn outline " style="width: 200px; border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">More About Us</button>
 </section>
 
 <style>
@@ -278,7 +297,7 @@ input:checked + .card{
 input:checked:focus-visible + .card > .card-data > footer label,
 .card-data > footer label:hover{
   --label-clr-txt: #FFF;
-  --label-clr-bg: steelblue;
+  --label-clr-bg: #ffc600;
 }
 
 input:checked + .card{
@@ -294,6 +313,32 @@ input:checked + .card{
 input:checked +.card > .card-img{
   animation: reveal-img calc(var(--duration) * 2) forwards;
 }
+
+.section2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  span{
+    display: flex;
+  }
+  span::before{
+    position: absolute;
+    content: " ";
+    height: 2px;
+    width: 100px;
+    left: 0;
+    background: #ffc600;
+  }
+
+}
+
+  .section ul{
+    display: flex;
+    text-align: left;
+  }
+
+
 
 @keyframes reveal-img{
   50%{  
