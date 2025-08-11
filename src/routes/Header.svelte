@@ -137,4 +137,9 @@
 		align-items: center;
 		margin-left: auto;
 	}
+	@media (max-width: 600px){
+		header{
+			padding: 0.5em 0em;
+		}
+	}
 </style>
