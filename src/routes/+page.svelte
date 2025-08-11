@@ -114,6 +114,9 @@ section{
   }
 }
 @media (max-width: 600px){
+  h1{
+    font-size: 2em;
+  }
   .images{
     img{
       width: 40px;
