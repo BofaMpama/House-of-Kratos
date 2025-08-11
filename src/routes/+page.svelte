@@ -163,8 +163,8 @@ article{
 
 
 .card-img{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   aspect-ratio: 1 / 1 ;
   rotate: var(--angle, 0deg);
   border-radius: 10px;
@@ -302,4 +302,7 @@ input:checked +.card > .card-img{
   }
 }
 
+@media (max-width: 600px){
+
+}
 </style>
