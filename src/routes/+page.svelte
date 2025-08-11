@@ -100,6 +100,9 @@ section{
 }
 
 @media (max-width: 800px){
+  h1{
+    font-size: 2.5em;
+  }
   .images{
     div{
     padding: 0px;
@@ -108,6 +111,14 @@ section{
     width: 60px;
     height: 60px;
   }
+  }
+}
+@media (max-width: 600px){
+  .images{
+    img{
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 </style>
