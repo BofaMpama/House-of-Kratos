@@ -23,7 +23,7 @@
 
 	
 
-	<button class="outline">Contact Us</button>
+	<button class="outline" style="width: 130px; height: 40px; font-size: 18px; ">Contact Us</button>
 	<div class="corner">
 		
 			<img src={menuBtn} alt="MenuToggle" class="menuBtn" on:click={() => showNav = !showNav} />
@@ -84,6 +84,7 @@
 		position: absolute;
 		width: 300px;
 		background: white;
+		z-index: 1000;
 		min-height: fit-content;
 		top: 20%;
 		right: 7%;
@@ -122,6 +123,7 @@
 	}
 	nav.show{
 		display: initial;
+		z-index: 1000;
 	}
 	button{
 		border-radius: 50px;
@@ -134,9 +136,5 @@
 		justify-content: center;
 		align-items: center;
 		margin-left: auto;
-	}
-	.menuBtn{
-		/* background: #ddddd8;
-		border-radius: 50px; */
 	}
 </style>
