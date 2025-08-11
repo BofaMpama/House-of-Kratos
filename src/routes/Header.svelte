@@ -91,8 +91,10 @@
 		background: white;
 		z-index: 1000;
 		min-height: fit-content;
-		top: 20%;
-		right: 7%;
+		width: 400px;
+		height: 80dvh;
+		top: 120px;
+		right: 0%;
 		height: fit-content;
         border-radius: 50px;
 		padding: 0.5em 0 0.5em 0;
@@ -147,6 +149,9 @@
 			padding: 0.5em 0em;
 			width: 95%;
 			left:2.5%;
+		}
+		nav{
+			width: 100%;
 		}
 	}
 </style>
