@@ -124,7 +124,7 @@ input[type="radio"] {
   --img-w: 400px;
   --duration: 300ms;
   --img-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 200px;
   width: 100%;
   margin-inline: auto;
