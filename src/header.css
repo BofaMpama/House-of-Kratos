@@ -1,55 +1,5 @@
-<script lang="ts">
-	import {onMount} from 'svelte';
-	import { page } from '$app/state';
-	import logo from '$lib/assets/logomark.jpg';
-	import menuBtn from '$lib/assets/menu-btn.png'
-	import contactBtn from '$lib/assets/contact-us.png'
 
 
-	
-	let showNav = false;
-	
-</script>
-
-
-<header>
-	
-	
-	<div class="corner">
-		<a href="/">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	
-
-	<button class="outline">Contact Us</button>
-	<div class="corner">
-		
-			<img src={menuBtn} alt="MenuToggle" class="menuBtn" on:click={() => showNav = !showNav} />
-	
-	</div>		
-
-	{#if showNav}
-	<nav class="nav">
-		
-		<ul>
-	
-				<a href="/">Home</a>
-			
-			
-				<a href="/about">About</a>
-
-		
-				<a href="/services">What We Do</a>
-			
-		</ul>
-		
-	</nav>	
-	{/if}
-</header>
-
-<style>
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -125,7 +75,7 @@
 	}
 	button{
 		border-radius: 50px;
-		font-size: 20px;
+		font-size: 10px;
 		background: #ffc600;
 		border: none;
 		color: white;
@@ -139,4 +89,4 @@
 		/* background: #ddddd8;
 		border-radius: 50px; */
 	}
-</style>
+

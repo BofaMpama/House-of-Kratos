@@ -2,27 +2,3 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-:root{
-    --primary-color: #ffc600;
-    --secondary-color: #161615;
-    --asset-color: #949599;
-    --asset-color-2: #b8b9bd;
-    --background-color: #fff;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
-}
-.primary {
-    color: var(--primary-color);
-}
-.secondary {
-    color: var(--secondary-color);
-}
-.asset-color {
-    color: var(--asset-color);
-}
-.asset-color-2 {
-    color: var(--asset-color-2);
-}
