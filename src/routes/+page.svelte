@@ -115,7 +115,7 @@ section{
 }
 @media (max-width: 600px){
   h1{
-    font-size: 2em;
+    font-size: 40px;
   }
   .images{
     img{
