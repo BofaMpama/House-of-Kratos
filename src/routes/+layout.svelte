@@ -4,8 +4,8 @@
 	import '../header.css';
 	import favicon from '$lib/assets/logomark.jpg';
 	import "@picocss/pico/css/pico.min.css";
-	import "$lib/assets/fonts/Milkyway Regular.otf"
-	import "$lib/assets/fonts/Outfit-VariableFont_wght (1).ttf"
+	import { injectAnalytics } from '@vercel/analytics/sveltekit'
+	
 
 	let { children } = $props();
 </script>
@@ -21,5 +21,5 @@
 </div>
 
 <style>
-	
+
 </style>
