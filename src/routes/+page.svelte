@@ -83,10 +83,10 @@
 </section>
 
 <section class="section2">
-<span>About Us</span>
-<h2 style="font-size: 50px;">Creative Powerhouse.<br/>
-Strategic Partner.<br/>
-Impact Ally.</h2>
+<span class="about-span">About Us</span>
+<h2 style="font-size: 50px;">Creative Powerhouse<span class="dot">.</span><br/>
+Strategic Partner<span class="dot">.</span><br/>
+Impact Ally <span class="dot">.</span></h2>
 <p>We work with people and organizations committed to solving problems sustainably.
 </p>
 
@@ -312,7 +312,7 @@ input:checked +.card > .card-img{
   flex-direction: column;
   gap: 20px;
 
-  span{
+  .about-span{
     display: flex;
     justify-content: left;
     gap: 10px;
@@ -320,7 +320,7 @@ input:checked +.card > .card-img{
     position: relative;
     margin-left: -100px;
   }
-  span::before{
+  .about-span::before{
     content: " ";
     height: 2px;
     width: 100px;
@@ -329,7 +329,9 @@ input:checked +.card > .card-img{
   }
 
 }
-
+.dot{
+  color: #ffc600;
+}
 
   .section2 li{
     list-style: none;
@@ -345,14 +347,15 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   }
 
   .section2 li:hover{
-    box-shadow: #ffc80028 0px 54px 55px, #ffc80028 0px -12px 30px, #ffc80028 0px 4px 6px, #ffc80028 0px 12px 13px, #ffc80028 0px -3px 5px; padding: 0.8rem 1rem;
+    box-shadow: #ffc80018 0px 54px 55px, #ffc80018 0px -12px 30px, #ffc80009 0px 4px 6px, #ffc8001a 0px 12px 13px, #ffc80015 0px -3px 5px; padding: 0.8rem 1rem;
+    transform: scale(1.1);
   }
   .section2 li::before{
     content: " ";
     left: 0;
-    width: 10px;
+    width: 20px;
     height: 10px;
-    border-radius: 100%;
+    border-radius: 20px;
     background: #ffc600;
     font-weight: bold;
     color: #ffc600;
@@ -365,7 +368,11 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     --angle: 0deg;
   }
 }
-
+@media (max-width: 900px){
+  .section2 li:hover{
+    transform: scale(1);
+  }
+}
 @media (max-width: 600px){
   .section2 li{
     width: 100%;
