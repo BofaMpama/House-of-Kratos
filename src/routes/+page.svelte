@@ -5,6 +5,7 @@
   import idea3 from '$lib/assets/puzzle.png';
   import idea4 from '$lib/assets/teamwork.png';
   import groupPhoto from '$lib/assets/group1.jpg';
+  import bulb from '$lib/assets/team-bulb.png';
 
 </script>
 
@@ -99,6 +100,9 @@ Impact Ally <span class="dot">.</span></h2>
 <li>People-first brands that care deeply about their communities</li>
 <p>If any of these sound like you, we want to work with you!</p>
 <button class="btn outline " style="width: 200px; border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">More About Us</button>
+</section>
+<section class="section3">
+  <img src="{bulb}" alt="" >
 </section>
 
 <style>
@@ -373,6 +377,15 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     --angle: 0deg;
   }
 }
+
+.section3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+
+
 @media (max-width: 900px){
   .section2 li:hover{
     transform: scale(1.0202);
