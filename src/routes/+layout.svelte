@@ -3,6 +3,7 @@
 	import '../app.css';
 	import '../header.css';
 	import favicon from '$lib/assets/logomark.jpg';
+	import "@picocss/pico/css/pico.min.css";
 
 	let { children } = $props();
 </script>

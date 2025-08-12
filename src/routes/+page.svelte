@@ -8,14 +8,7 @@
 
 </script>
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
->
+
 <link rel="stylesheet" href="../header.css">
 
 
@@ -321,9 +314,13 @@ input:checked +.card > .card-img{
 
   span{
     display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    margin-left: -100px;
   }
   span::before{
-    position: absolute;
     content: " ";
     height: 2px;
     width: 100px;
@@ -333,11 +330,33 @@ input:checked +.card > .card-img{
 
 }
 
-  .section ul{
+
+  .section2 li{
+    list-style: none;
+    position: relative;
     display: flex;
-    text-align: left;
+    align-items: center;
+    border-radius: 50px;
+    gap: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; padding: 0.8rem 1rem;
+  border-radius: 8px;
+  width: 800px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
+  .section2 li:hover{
+    box-shadow: #ffc80028 0px 54px 55px, #ffc80028 0px -12px 30px, #ffc80028 0px 4px 6px, #ffc80028 0px 12px 13px, #ffc80028 0px -3px 5px; padding: 0.8rem 1rem;
+  }
+  .section2 li::before{
+    content: " ";
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ffc600;
+    font-weight: bold;
+    color: #ffc600;
+  }
 
 
 @keyframes reveal-img{
@@ -348,6 +367,8 @@ input:checked +.card > .card-img{
 }
 
 @media (max-width: 600px){
-
+  .section2 li{
+    width: 100%;
+  }
 }
 </style>
