@@ -10,6 +10,7 @@
 
 
 <link rel="stylesheet" href="../header.css">
+<link href="https://fonts.googleapis.com/css2?family=Milkyway&display=swap" rel="stylesheet">
 
 
 
@@ -105,6 +106,7 @@ Impact Ally <span class="dot">.</span></h2>
 *,::before,::after{
   margin: 0;
 }
+
 
 @property --angle {
   syntax: "<angle>";
@@ -271,26 +273,29 @@ input:checked + .card{
 }
 .card-data > footer label{
   margin-block-start: auto;
+  margin-top: 20px;
   cursor: pointer;
   pointer-events: var(--card-events, none);
   opacity: var(--data-opacity, 0);
   transition: color var(--duration) ease-in-out;
-  color: var(--label-clr-txt,#000);
-  background-color:var(--label-clr-bg,#EEE);
+  color: var(--label-clr-txt,#ffffff);
+  background-color:var(--label-clr-bg,transparent);
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   aspect-ratio: 1/1;
   display: grid;
   place-content: center;
-  transition: background-color 300ms ease-in-out,color  300ms ease-in-out;
+  transition: background-color 900ms ease-in-out,color  300ms ease-in-out;
 }
 
 
 input:checked:focus-visible + .card > .card-data > footer label,
 .card-data > footer label:hover{
   --label-clr-txt: #FFF;
-  --label-clr-bg: #ffc600;
+  --label-clr-bg: #161615;
+  transform: scale(1.1);
 }
 
 input:checked + .card{
@@ -370,8 +375,8 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 }
 @media (max-width: 900px){
   .section2 li:hover{
-    transform: scale(1);
-  }
+    transform: scale(1.0202);
+box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; }
 }
 @media (max-width: 600px){
   .section2 li{
