@@ -6,6 +6,7 @@
   import idea4 from '$lib/assets/teamwork.png';
   import groupPhoto from '$lib/assets/group1.jpg';
   import bulb from '$lib/assets/team-bulb.png';
+  import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
 </script>
 

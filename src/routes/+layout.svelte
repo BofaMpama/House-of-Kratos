@@ -4,7 +4,7 @@
 	import '../header.css';
 	import favicon from '$lib/assets/logomark.jpg';
 	import "@picocss/pico/css/pico.min.css";
-	import { injectAnalytics } from '@vercel/analytics/sveltekit'
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	
 
 	let { children } = $props();
