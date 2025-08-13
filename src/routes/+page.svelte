@@ -40,18 +40,6 @@
 </div>
 
 
-
-<section class="section1 cards">
-
-
- 
-    {#each cardDetails as card}
-      <CarouselCard card={card}/>
-    {/each}
-
- 
-</section>
-
 <section class="section2">
   <div class="side1">
     
@@ -97,22 +85,11 @@ Impact Ally <span class="dot">.</span></h2>
     
 }
 
-.cards{
-  --img-w: 400px;
-  --duration: 300ms;
-  --img-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
-  margin-top: 150px;
-  margin-bottom: 200px;
-  width: 100%;
-  margin-inline: auto;
-  display: grid;
-  
-  counter-reset: my-counter;
-}
 
 
 .section2{
   display: flex;
+  margin-top: 200px;
   gap: 20px;
 
 
@@ -183,6 +160,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
   padding: 50px 0 50px 0;
 }
 
