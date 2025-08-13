@@ -34,8 +34,8 @@
 
 <div class="section0" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100dvh; border-radius: 50px;  gap: 40px; ">
   <span>Ideate. Connect. Create.</span>
-  <h1 style="color: #ffc600; font-size: 5em; text-align:center;">Let's build the future together.</h1>
-
+  <h1 style="color: #ffc600; text-align:center;">Let's build the future together.</h1>
+  <p>We are more than a creative agency — we are your partners in purpose.</p>
   <button class="outline btn" style="border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">Work with us</button>
 </div>
 
@@ -75,10 +75,15 @@ Impact Ally <span class="dot">.</span></h2>
 .section0{
   background: linear-gradient(rgba(36, 28, 1, 0.5), rgba(15, 12, 0, 0.904)), url(../lib/assets/brand-strategy.jpg);       
   margin-top: 150px;
+  text-align: center;
   background-size: cover;
   color: #ffc600;
   transition: 0.5s;
 
+  h1{
+    font-size: 5em;
+  }
+ 
 }
 .section0:hover{
   transform: scale(1.01);
@@ -171,6 +176,9 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
     h1{
       font-size: 4em;
     }
+     h1,p{
+    max-width: 80%;
+  }
   }
   .section2 {
     flex-wrap: wrap;
@@ -184,8 +192,12 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   .section0{
     margin-top: 120px;
     h1{
-      font-size: 3.5em;
+      font-size: 3.8em;
     }
+     h1,p{
+    max-width: 90%;
+  }
+
   }
   .section2 li{
     width: 100%;
