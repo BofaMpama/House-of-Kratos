@@ -78,6 +78,7 @@ Impact Ally <span class="dot">.</span></h2>
   background-size: cover;
   color: #ffc600;
   transition: 0.5s;
+
 }
 .section0:hover{
   transform: scale(1.01);
@@ -166,6 +167,11 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 
 
 @media (max-width: 900px){
+  .section0{
+    h1{
+      font-size: 4em;
+    }
+  }
   .section2 {
     flex-wrap: wrap;
   }
@@ -177,6 +183,9 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 @media (max-width: 600px){
   .section0{
     margin-top: 120px;
+    h1{
+      font-size: 3.5em;
+    }
   }
   .section2 li{
     width: 100%;
