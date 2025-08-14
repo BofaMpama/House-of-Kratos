@@ -209,6 +209,7 @@
 			padding: 0.5em 0em;
 			width: 95%;
 			left:2.5%;
+			gap: none;
 		}
 		nav{
 			width: 100%;
