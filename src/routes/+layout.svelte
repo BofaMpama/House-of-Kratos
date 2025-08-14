@@ -20,7 +20,7 @@
 
 		<Header />
 
-	<main style="background: #161615;">
+	<main>
 			{@render children()}
 	</main>
 		<Footer />

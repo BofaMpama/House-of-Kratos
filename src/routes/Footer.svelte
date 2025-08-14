@@ -131,6 +131,11 @@
         align-items: center;
         text-align: center;
     }
+    .copyright-text{
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+    }
 }
 
             </style>
