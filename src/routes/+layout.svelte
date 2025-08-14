@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from './Header.svelte';
+	import Footer from './Footer.svelte';
 	import '../app.css';
 	import '../header.css';
 	import favicon from '$lib/assets/logomark.jpg';
@@ -14,14 +15,21 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
-<div class="container">
-	<Header />
+<div class="container" style="">
+	
 
-	<main>
+		<Header />
+
+	<main style="background: #161615;">
 			{@render children()}
 	</main>
+		<Footer />
+
 </div>
 
-<style>
 
+<style>
+	main{
+		margin-bottom: 200px;
+	}
 </style>
