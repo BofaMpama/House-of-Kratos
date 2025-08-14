@@ -1,36 +1,41 @@
-<script>
+<script lang="ts">
   import bulb from '$lib/assets/team-bulb.png';
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
-  import CarouselCard from '$lib/CarouselCard.svelte';
+  import Carousel from '$lib/components/Carousel.svelte';
 
+    const cards = [
+          {image: '$lib/assets/light-bulb.png',
+           heading: 'Content Strategy',
+           subtext: 'Hello 123' 
+          },
+          {image: '$lib/assets/idea.png',
+           heading: 'marketing Strategy',
+           subtext: 'good day hello' 
+          },
+          {image: '$lib/assets/light-bulb.png',
+           heading: 'success Strategy',
+           subtext: 'Hello hello hello' 
+          }, {image: '$lib/assets/light-bulb.png',
+           heading: 'Content Strategy',
+           subtext: 'Hello 123' 
+          },
+          {image: '$lib/assets/idea.png',
+           heading: 'marketing Strategy',
+           subtext: 'good day hello' 
+          },
+          {image: '$lib/assets/light-bulb.png',
+           heading: 'success Strategy',
+           subtext: 'Hello hello hello' 
+          }
+    ];
 
-  let cardDetails = [
-    { 
-     image: "$lib/assets/teamwork.png", 
-     subheading: "Ideate.",
-     heading: "Let's build the future together",
-     paragraph: "We are more than a creative agency — we are your partners in purpose."
-    },
-    {
-     image: "$lib/assets/idea2.png", 
-     subheading: "Connect",
-     heading: "One Idea at a Time",
-     paragraph: "We'll partner with you to birth that big idea in your brain to life."
-    },
-     {
-     image: "$lib/assets/puzzle.png", 
-     subheading: "Create",
-     heading: "We'll piece the puzzle together",
-     paragraph: "Making sure everything makes sense and that those abstract ideas come together."
-    }
-
-  ];
 
 </script>
 
 
 <link rel="stylesheet" href="../header.css">
 <link href="https://fonts.googleapis.com/css2?family=Milkyway&display=swap" rel="stylesheet">
+
 
 <div class="section0" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100dvh; border-radius: 50px;  gap: 40px; ">
   <span>Ideate. Connect. Create.</span>
@@ -63,11 +68,16 @@ Impact Ally <span class="dot">.</span></h2>
 <p>If any of these sound like you, we want to work with you!</p>
 <button class="btn outline " style="width: 100%; border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">More About Us</button></div>
 </section>
+
+
 <section class="section3">
-  <img src="{bulb}" alt="" >
+  <Carousel items = {cards} />
 </section>
 
-<style>
+
+
+
+<style lang="css">
 
 *,::before,::after{
   margin: 0;
@@ -163,12 +173,11 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 }
 
 .section3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 200px;
-  padding: 50px 0 50px 0;
+  max-width: 100%;
+  width: 100%;
+  margin: 200px 0 200px 0;
 }
+
 
 
 @media (max-width: 900px){
@@ -179,6 +188,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
      h1,p{
     max-width: 80%;
   }
+
+  }
+    .section0:hover{
+    transform: scale(1);
   }
   .section2 {
     flex-wrap: wrap;

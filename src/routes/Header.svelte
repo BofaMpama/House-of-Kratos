@@ -56,7 +56,7 @@
         background: white;
         border-radius: 50px;
         margin: 1em;
-		padding: 0.5em 1em 0.5em 1em;
+		padding: 0.3em 1em 0.3em 1em;
         align-items: center;
 		position: fixed;
 		top: 0%;
