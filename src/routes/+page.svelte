@@ -2,30 +2,27 @@
   import bulb from '$lib/assets/team-bulb.png';
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import Carousel from '$lib/components/Carousel.svelte';
+  import pic1 from '$lib/assets/creative-strategy.jpg';
+  import pic2 from '$lib/assets/brand-strategy.jpg';
+  import pic3 from '$lib/assets/content-strategy-development.jpg';
+  import pic4 from '$lib/assets/social-impact-strategy.jpg';
+  import pic5 from '$lib/assets/strategic-social-oversight.jpg';
 
     const cards = [
-          {image: '$lib/assets/light-bulb.png',
-           heading: 'Content Strategy',
-           subtext: 'Hello 123' 
+          {image: pic1,
+           heading: 'Creative Strategy'
           },
-          {image: '$lib/assets/idea.png',
-           heading: 'marketing Strategy',
-           subtext: 'good day hello' 
+          {image: pic2,
+           heading: 'Brand Strategy'
           },
-          {image: '$lib/assets/light-bulb.png',
-           heading: 'success Strategy',
-           subtext: 'Hello hello hello' 
-          }, {image: '$lib/assets/light-bulb.png',
-           heading: 'Content Strategy',
-           subtext: 'Hello 123' 
+          {image: pic3,
+           heading: 'Content Strategy & Development'
+          }, 
+          {image: pic4,
+           heading: 'Social Impact Strategy'
           },
-          {image: '$lib/assets/idea.png',
-           heading: 'marketing Strategy',
-           subtext: 'good day hello' 
-          },
-          {image: '$lib/assets/light-bulb.png',
-           heading: 'success Strategy',
-           subtext: 'Hello hello hello' 
+          {image: pic5,
+           heading: 'Strategic Social Oversight'
           }
     ];
 
