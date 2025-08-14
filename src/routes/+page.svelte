@@ -1,4 +1,5 @@
 <script lang="ts">
+  import faq from '$lib/data/faq.json';
   import bulb from '$lib/assets/team-bulb.png';
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import Carousel from '$lib/components/Carousel.svelte';
@@ -26,6 +27,11 @@
           }
     ];
 
+    const questions = [
+      {question: "What kind of brands do you work with?",
+       answer: "We work with people-focused, impact-driven brands – especially social enterprises, NGOs, foundations, and innovative startups that care deeply about transforming lives and communities."
+      }
+    ];
 
 </script>
 
@@ -71,7 +77,30 @@ Impact Ally <span class="dot">.</span></h2>
   <Carousel items = {cards} />
 </section>
 
+<div class="section4">
+    <div class="side1">
+    
+<span class="about-span">FAQ</span>
+<h2 style="font-size: 50px;">
+  <span class="dot">F</span>requently
+  <span class="dot">A</span>sked
+  <span class="dot">Q</span>uestions</h2>
+<p>We've compiled the answers to a couple questions we thought you might ask.
+</p>
+  </div>
+  <div class="side2" style="">
+      
+    {#each faq as question }
+      
+    <details>
+       <summary role="button" class="outline secondary">{question.question}</summary>
+       <p>{question.answer}</p>
+  </details>
+    {/each}
 
+
+</div>
+</div>
 
 
 <style lang="css">
@@ -106,6 +135,9 @@ Impact Ally <span class="dot">.</span></h2>
   gap: 20px;
 
 
+
+
+}
   .about-span{
     display: flex;
     justify-content: left;
@@ -121,9 +153,7 @@ Impact Ally <span class="dot">.</span></h2>
     left: 0;
     background: #ffc600;
   }
-
-}
-.section2 .side1, .section2 .side2{
+ .side1, .side2{
   flex-grow: 1;
    display: flex;
   flex-direction: column;
@@ -175,6 +205,20 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   margin: 200px 0 200px 0;
 }
 
+.section4{
+  display: flex;
+  gap: 20px;
+
+  .side1, .side2{
+    max-width: 50%; 
+    width: 50%;
+  }
+}
+.section4 h2{
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 5px;
+}
 
 
 @media (max-width: 900px){
@@ -196,6 +240,15 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   .section2 li:hover{
     transform: scale(1.0202);
 box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+ }
+ .section4{
+    flex-direction: column;
+    gap: 40px;
+
+    .side1, .side2{
+      width: 100%;
+      max-width: 100%;
+    }
  }
 }
 @media (max-width: 600px){

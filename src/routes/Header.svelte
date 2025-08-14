@@ -37,7 +37,8 @@
 
 	<div class="spacer"> </div>
 
-	<button class="outline contact-btn" style="width: 130px; height: 40px; font-size: 18px; ">Contact Us</button>	
+	<div class="right-nav">
+			<button class="outline contact-btn" style="width: 130px; height: 40px; font-size: 18px; ">Contact Us</button>	
 
 	<div class="socials" style="">
 				<img src="{meta}" alt="">
@@ -51,6 +52,7 @@
 	
 	</div>
 		
+	</div>
 
 	{#if showNav}
 	<nav class="nav">
@@ -121,16 +123,13 @@
 
 	nav {
 		position: absolute;
-		width: 300px;
+		width: 400px;
 		background: white;
 		z-index: 1000;
-		min-height: fit-content;
+		min-height: 100dvh;
 		width: 400px;
-		height: 80dvh;
-		top: 120px;
 		right: 0%;
 		height: fit-content;
-        border-radius: 50px;
 		padding: 0.5em 0 0.5em 0;
 	}
 
@@ -138,21 +137,19 @@
 		padding: 0;
 		margin: 0;
 		display: flex;
-		gap: 2em;
+		gap: 0em;
 		padding: 1em;
+		text-align: left;
 		width: 100%;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 	}
 
 	nav a {
 		display: flex;
 		height: 100%;
-		align-items: baseline;
 		color: black;
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 2em;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
@@ -181,7 +178,10 @@
 	.spacer{
 		flex-grow: 1;
 	}
-	.contact-btn{
+	.right-nav{
+		display: flex;
+		gap: 20px;
+		align-items: center;
 		margin-left: auto;
 	}
 	.socials{
