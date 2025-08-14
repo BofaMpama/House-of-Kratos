@@ -24,7 +24,6 @@
             <Card
                 image={item.image}
                 heading={item.heading}
-                subtext={item.subtext}
             />
         {/each}
     </div>

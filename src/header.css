@@ -3,7 +3,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-        background: white;
+        background: rgba(50, 50, 50, 0.3);
         border-radius: 50px;
         margin: 1em;
 		padding: 0.5em 1em 0.5em 1em;
@@ -33,7 +33,7 @@
 	nav {
 		position: absolute;
 		width: 300px;
-		background: white;
+		background: rgba(50, 50, 50, 0.3);
 		min-height: fit-content;
 		top: 20%;
 		right: 7%;
