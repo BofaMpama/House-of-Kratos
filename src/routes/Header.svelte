@@ -15,7 +15,7 @@
 </script>
 
 
-<header style="@media (max-width: 600px) width: 100%; margin-left: 0; margin-right: 0;">
+<header data-aos="zoom-out" style="@media (max-width: 600px) width: 100%; margin-left: 0; margin-right: 0;">
 	
 	
 	<div class="corner">

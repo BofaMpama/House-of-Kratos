@@ -32,7 +32,7 @@
   <div class="side1">
     
 <span class="about-span">About Us</span>
-<h2 style="font-size: 50px;">Creative Powerhouse<span class="dot">.</span><br/>
+<h2 style="font-size: 50px;" data-aos="fade-up">Creative Powerhouse<span class="dot">.</span><br/>
 Strategic Partner<span class="dot">.</span><br/>
 Impact Ally <span class="dot">.</span></h2>
 <p>We work with people and organizations committed to solving problems sustainably.
@@ -42,12 +42,12 @@ Impact Ally <span class="dot">.</span></h2>
 <div class="side2">
   
 
-  <li>Visionary startups ready to disrupt the norm
+<li data-aos="fade-down">Visionary startups ready to disrupt the norm
 </li>
-<li> Purpose-driven founders who lead with empathy</li>
-<li>Social enterprises & NGOs creating real, measurable impact</li>
-<li>Forward-thinking teams who value creativity, strategy, and collaboration</li>
-<li>People-first brands that care deeply about their communities</li>
+<li data-aos="fade-down"> Purpose-driven founders who lead with empathy</li>
+<li data-aos="fade-down">Social enterprises & NGOs creating real, measurable impact</li>
+<li data-aos="fade-down">Forward-thinking teams who value creativity, strategy, and collaboration</li>
+<li data-aos="fade-down">People-first brands that care deeply about their communities</li>
 <p>If any of these sound like you, we want to work with you!</p>
 <button class="btn outline " style="width: 100%; border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">More About Us</button></div>
 </section>
@@ -60,8 +60,8 @@ Impact Ally <span class="dot">.</span></h2>
 <div class="section4">
     <div class="side1">
     
-<span class="about-span">FAQ</span>
-<h2 style="font-size: 50px;">
+<span class="about-span"  data-aos="flip-left">FAQ</span>
+<h2 data-aos="flip-right"  style="font-size: 50px;">
   <span class="dot">F</span>requently
   <span class="dot">A</span>sked
   <span class="dot">Q</span>uestions</h2>
@@ -72,7 +72,7 @@ Impact Ally <span class="dot">.</span></h2>
       
     {#each faq as question }
       
-    <details>
+    <details data-aos="fade-down">
        <summary role="button" class="outline secondary">{question.question}</summary>
        <p>{question.answer}</p>
   </details>

@@ -26,7 +26,7 @@
 </script>
 
 <section>
-    <div class="carousel-wrapper">
+    <div class="carousel-wrapper" data-aos="zoom-in">
         <div class="carousel" style="transform: translateX(-{currentIndex * 100}%)">
             {#each cards as card}
                 <div class="carousel-card">

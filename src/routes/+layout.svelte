@@ -7,7 +7,17 @@
 	import "@picocss/pico/css/pico.css";
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
-	
+	import AOS from 'aos';
+    import 'aos/dist/aos.css';
+
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    AOS.init({
+      duration: 800, // animation duration in ms
+      once: true,    // whether animation should happen only once
+    });
+  });
 
 	let { children } = $props();
 </script>
