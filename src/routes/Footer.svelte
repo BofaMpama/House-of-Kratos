@@ -121,6 +121,7 @@
         align-items: center;
         text-align: center;
         gap: 40px;
+        padding: 20px;
         .logo{
             margin-left: 0;
         }
@@ -133,6 +134,7 @@
     }
     .copyright-text{
         width: 80%;
+        max-width: 80%;
         margin-left: 10%;
         text-align: center;
     }
