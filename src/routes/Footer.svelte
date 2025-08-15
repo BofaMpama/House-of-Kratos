@@ -135,7 +135,6 @@
     .copyright-text{
         width: 80%;
         max-width: 80%;
-        margin-left: 10%;
         text-align: center;
     }
 }
