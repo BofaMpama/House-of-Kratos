@@ -1,0 +1,32 @@
+section{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+  .about-span{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    margin-left: -100px;
+  }
+  .about-span::before{
+    content: " ";
+    height: 2px;
+    width: 100px;
+    left: 0;
+    background: #ffc600;
+  }
+ .side1, .side2{
+  flex-grow: 1;
+   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 900px){
+    section{
+        flex-wrap: wrap;
+    }
+}
+

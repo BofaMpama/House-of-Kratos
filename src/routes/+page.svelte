@@ -24,7 +24,8 @@
   <span>Ideate. Connect. Create.</span>
   <h1 style="color: #ffc600; text-align:center;">Let's build the future together.</h1>
   <p>We are more than a creative agency — we are your partners in purpose.</p>
-  <button class="outline btn" style="border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">Work with us</button>
+  <a href="/contact-us">
+  <button class="outline btn" style="border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">Work with us</button></a>
 </div>
 
 
@@ -53,18 +54,18 @@ Impact Ally <span class="dot">.</span></h2>
 </section>
 
 
-<section class="section3">
+<div class="section3 carousel-section">
   <Carousel />
-</section>
+</div>
 
-<div class="section4">
+<section class="section4">
     <div class="side1">
     
 <span class="about-span"  data-aos="flip-left">FAQ</span>
-<h2 data-aos="flip-right"  style="font-size: 50px;">
-  <span class="dot">F</span>requently
-  <span class="dot">A</span>sked
-  <span class="dot">Q</span>uestions</h2>
+<h2 data-aos="fade-up"  style="font-size: 50px;">
+  <span class="dot" data-aos="flip-left">F</span>requently
+  <span class="dot" data-aos="flip-left">A</span>sked
+  <span class="dot" data-aos="flip-left">Q</span>uestions</h2>
 <p>We've compiled the answers to a couple questions we thought you might ask.
 </p>
   </div>
@@ -80,15 +81,13 @@ Impact Ally <span class="dot">.</span></h2>
 
 
 </div>
-</div>
+</section>
 
 
 
 <style lang="css">
 
-*,::before,::after{
-  margin: 0;
-}
+
 .section0{
   background: linear-gradient(rgba(36, 28, 1, 0.5), rgba(15, 12, 0, 0.904)), url(../lib/assets/brand-strategy.jpg);       
   margin-top: 150px;
@@ -119,28 +118,6 @@ Impact Ally <span class="dot">.</span></h2>
 
 
 }
-  .about-span{
-    display: flex;
-    justify-content: left;
-    gap: 10px;
-    align-items: center;
-    position: relative;
-    margin-left: -100px;
-  }
-  .about-span::before{
-    content: " ";
-    height: 2px;
-    width: 100px;
-    left: 0;
-    background: #ffc600;
-  }
- .side1, .side2{
-  flex-grow: 1;
-   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .dot{
   color: #ffc600;
 }
@@ -181,7 +158,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 }
 
 .section3{
-  max-width: 100%;
   width: 100%;
   margin: 200px 0 200px 0;
 }

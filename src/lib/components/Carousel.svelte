@@ -44,6 +44,10 @@
 </section>
 
 <style>
+    section{
+        display: flex;
+        flex-direction: column;
+    }
     .carousel-wrapper {
         overflow: hidden;
         margin: auto;

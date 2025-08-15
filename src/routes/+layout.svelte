@@ -5,6 +5,7 @@
 	import '../header.css';
 	import favicon from '$lib/assets/logomark.jpg';
 	import "@picocss/pico/css/pico.css";
+	import "$lib/styles/flex-section.css";
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
 	import AOS from 'aos';
@@ -15,7 +16,7 @@
   onMount(() => {
     AOS.init({
       duration: 800, // animation duration in ms
-      once: true,    // whether animation should happen only once
+      once: false,    // whether animation should happen only once
     });
   });
 

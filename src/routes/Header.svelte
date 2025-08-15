@@ -38,7 +38,13 @@
 	<div class="spacer"> </div>
 
 	<div class="right-nav">
-			<button class="outline contact-btn" style="width: 130px; height: 40px; font-size: 18px; ">Contact Us</button>	
+			<a href="/contact-us">
+			<button class="outline contact-btn" style="width: 130px; height: 40px; font-size: 18px; ">
+			
+				Contact Us
+			
+			</button>	
+			</a>
 
 	<div class="socials" style="">
 				<img src="{meta}" alt="">
@@ -90,6 +96,10 @@
 		left: 5%;
 		width: 90%;
 		z-index: 100000;
+	}
+	a{
+		text-decoration: none;
+		color: inherit;
 	}
 
 	.desktop-nav {

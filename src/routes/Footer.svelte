@@ -5,7 +5,7 @@
 	import linkedin from '$lib/assets/in.png';
 </script>
 
-<footer>
+<footer data-aos="zoom-in-up">
             <div class="footer-left">
                <img src="{logo}" alt="House of Kratos">
                <p>Ideate. Connect. Create.</p>
@@ -16,7 +16,7 @@
                     <a href="/">Home</a>
                     <a href="/about">About</a>
                     <a href="/sevices">What We Do</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/contact-us">Contact Us</a>
                 </ul>
             </div>
             <div class="footer-contact-info">
@@ -49,7 +49,7 @@
     align-items: top;
     background: black;
     border-radius: 50px;
-    color: var(--background);
+    color: white;
     padding: 40px;
     margin-bottom: 50px;
     gap: var(--spacing5);
@@ -80,7 +80,7 @@
         flex-direction: column;
         gap: 15px;
         a{
-        color: var(--background);            
+        color: rgb(255, 255, 255);            
         text-decoration: none;
 
         }
@@ -90,6 +90,11 @@
     }
 .footer-contact-info{
     flex: 1;
+
+    h3, p{
+            color: white;
+
+    }
 }    
 .footer-right{
     display: flex;
@@ -98,6 +103,7 @@
     align-items: right;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .social-media-icons{
     display: flex;
