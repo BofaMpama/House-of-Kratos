@@ -38,6 +38,7 @@
 	},
 	"dependencies": {
 		"@picocss/pico": "^2.1.1",
+		"@splidejs/splide": "^4.1.4",
 		"@vercel/analytics": "^1.5.0",
 		"gsap": "^3.13.0"
 	}
