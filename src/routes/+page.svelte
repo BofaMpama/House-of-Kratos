@@ -3,29 +3,9 @@
   import bulb from '$lib/assets/team-bulb.png';
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import Carousel from '$lib/components/Carousel.svelte';
-  import pic1 from '$lib/assets/creative-strategy.jpg';
-  import pic2 from '$lib/assets/brand-strategy.jpg';
-  import pic3 from '$lib/assets/content-strategy-development.jpg';
-  import pic4 from '$lib/assets/social-impact-strategy.jpg';
-  import pic5 from '$lib/assets/strategic-social-oversight.jpg';
 
-    const cards = [
-          {image: pic1,
-           heading: 'Creative Strategy'
-          },
-          {image: pic2,
-           heading: 'Brand Strategy'
-          },
-          {image: pic3,
-           heading: 'Content Strategy & Development'
-          }, 
-          {image: pic4,
-           heading: 'Social Impact Strategy'
-          },
-          {image: pic5,
-           heading: 'Strategic Social Oversight'
-          }
-    ];
+
+ 
 
     const questions = [
       {question: "What kind of brands do you work with?",
@@ -74,7 +54,7 @@ Impact Ally <span class="dot">.</span></h2>
 
 
 <section class="section3">
-  <Carousel items = {cards} />
+  <Carousel />
 </section>
 
 <div class="section4">

@@ -1,68 +1,88 @@
 <script>
+// @ts-nocheck
+
     import Card from '$lib/components/Card.svelte';
-    export let items = [];
-    export let visibleCount = 3; // number of cards visible at once
+  import pic1 from '$lib/assets/creative-strategy.jpg';
+  import pic2 from '$lib/assets/brand-strategy.jpg';
+  import pic3 from '$lib/assets/content-strategy-development.jpg';
+  import pic4 from '$lib/assets/social-impact-strategy.jpg';
+  import pic5 from '$lib/assets/strategic-social-oversight.jpg';
 
     let currentIndex = 0;
-
-    function prev() {
-        currentIndex = Math.max(currentIndex - 1, 0);
+    function prev(){
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
     }
 
-    function next() {
-        const maxIndex = Math.max(items.length - visibleCount, 0);
-        currentIndex = Math.min(currentIndex + 1, maxIndex);
+    function next(){
+        currentIndex = (currentIndex + 1) % cards.length;
     }
+
+       const cards = [
+          {image: pic1,
+           heading: 'Creative Strategy'
+          },
+          {image: pic2,
+           heading: 'Brand Strategy'
+          },
+          {image: pic3,
+           heading: 'Content Strategy & Development'
+          }, 
+          {image: pic4,
+           heading: 'Social Impact Strategy'
+          },
+          {image: pic5,
+           heading: 'Strategic Social Oversight'
+          }
+    ];
+   
 </script>
 
-<div class="carousel-wrapper">
-    <div
-        class="carousel"
-        style="transform: translateX(-{(currentIndex * (100 / visibleCount))}%);"
-    >
-        {#each items as item, index (index)}
-            <Card
-                image={item.image}
-                heading={item.heading}
-            />
-        {/each}
+<section>
+    <div class="carousel-wrapper">
+        <div class="carousel" style="transform: translateX(-{currentIndex * 100}%)">
+            {#each cards as card, i}
+                    <div class="card">
+                        <Card
+                    image={card.image}
+                    heading={card.heading}
+                />
+                    </div>
+            {/each}
+        </div>
     </div>
 
     <div class="carousel-nav">
-        <button on:click={prev} disabled={currentIndex === 0}>
-            &LeftAngleBracket;
-        </button>
+        <button on:click={prev}>Prev</button>
         <button class="btn">What we do</button>
-        <button
-            on:click={next}
-            disabled={currentIndex >= items.length - visibleCount}
-        >
-            &RightAngleBracket;
-        </button>
+        <button on:click={next}>Next</button>
     </div>
-</div>
+
+</section>
+    
+        
+   
+    
+
 
 <style>
     .carousel-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 40px;
-        align-items: center;
-        position: relative;
+        
+   
+
         overflow: hidden;
-        width: 100%;
+        margin: auto;
+        width: 50%;
     }
 
     .carousel {
         display: flex;
         transition: transform 0.5s ease;
-        width: 100%;
     }
 
     /* Card size based on visibleCount */
     .card {
-        flex: 0 0 calc(100% / var(--visible-count, 3));
+        flex: 0 0 100%;
+        padding: 10px;
         box-sizing: border-box;
     }
 
