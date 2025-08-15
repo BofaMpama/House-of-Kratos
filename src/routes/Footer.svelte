@@ -51,6 +51,7 @@
     border-radius: 50px;
     color: var(--background);
     padding: 40px;
+    margin-bottom: 50px;
     gap: var(--spacing5);
 
     .logo{
