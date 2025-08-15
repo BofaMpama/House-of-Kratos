@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="copyright-text w-90">
-                <p>&copy; Copyright House of Kratos 2025. All Rights Reserved.</p>
+                <p>&copy; Copyright House of Kratos 2025. </p>
             </div>
             </footer>
 
@@ -137,6 +137,9 @@
         max-width: 80%;
         text-align: center;
     }
+}
+@media (max-width: 600px){
+
 }
 
             </style>
