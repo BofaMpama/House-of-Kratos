@@ -16,11 +16,13 @@
     </div>
     <div class="side2">
         <form action="" method="post" data-aos="fade-down">
-    <input type="text" name="fname" placeholder="First name" required>
-    <input type="text" name="lname" placeholder="Last name" required>
-    <input type="email" name="email" id="" placeholder="email" required>
-    <input type="text" name="subject" id="" placeholder="Subject" required>
-    <textarea name="message" id="" cols="10" rows="6" placeholder="Write us a message" required></textarea>
+    <input type="text" name="fname" placeholder="First name*" required>
+    <input type="text" name="lname" placeholder="Last name*" required>
+    <input type="email" name="email" id="" placeholder="email*" required>
+    <input type="number" name="phone" id="" placeholder="Phone number">
+    <input type="text" name="company" id="" placeholder="Company name*" required>
+    <input type="text" name="subject" id="" placeholder="Subject*" required>
+    <textarea name="message" id="" cols="10" rows="6" placeholder="Write us a message*" required></textarea>
     <input type="submit" value="Submit" style="background: transparent; 100%; border-radius: 50px; border-color: rgb(255, 191, 0); color: rgb(255, 191, 0);">
 </form>
     </div>
