@@ -17,7 +17,7 @@ export const actions = {
             dataObj[key] = value;
         } 
 
-        const
+        
 
         //path to json file
         const filePath = path.join(process.cwd(), 'form-submissions.json');
