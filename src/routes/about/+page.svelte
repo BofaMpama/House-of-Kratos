@@ -1,5 +1,5 @@
 <script>
-  import groupIllustration from '$lib/assets/working-team.png';
+  import groupIllustration from '$lib/assets/group.png';
 
 </script>
 <link
