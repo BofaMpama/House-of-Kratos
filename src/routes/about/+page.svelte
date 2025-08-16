@@ -1,93 +1,51 @@
 <script>
-  let showBox = false;
+  import groupIllustration from '$lib/assets/group.png';
 
-  function popup(){
-    showBox = !showBox;
-  }
 </script>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
 >
 
-<h1>About Us</h1>
-<p>This is the story of how we became...</p>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
-<button on:click={popup}>click me</button>
-
-{#if showBox}
-<dialog open>
-  <article>
-    <header>
-      <button aria-label="Close" rel="prev"></button>
-      <p>
-        <strong>🗓️ Thank You for Registering!</strong>
-      </p>
-    </header>
+<section class="about-section">
+  <div class="side1">
+    <span>
+      About Us
+    </span>
+    <h1>
+      Creative Powerhouse.
+      Strategic Partner.
+      Impact Ally.
+    </h1>  
     <p>
-      We're excited to have you join us for our
-      upcoming event. Please arrive at the museum 
-      on time to check in and get started.
+      House of Kratos exists for people-driven brands that want to do more than make a profit — they want to make a difference. We work with social enterprises, NGOs, and forward-thinking brands to design creative and strategic solutions that catalyze transformation.
     </p>
-    <ul>
-      <li>Date: Saturday, April 15</li>
-      <li>Time: 10:00am - 12:00pm</li>
-    </ul>
-  </article>
-</dialog> 
-  <!-- <dialog open>
-  <article>
-    <h2>Confirm Your Membership</h2>
-    <p>
-      Thank you for signing up for a membership!
-      Please review the membership details below:
-    </p>
-    <ul>
-      <li>Membership: Individual</li>
-      <li>Price: $10</li>
-    </ul>
-    <footer>
-      <button class="secondary">
-        Cancel
-      </button>
-      <button>Confirm</button>
-    </footer>
-  </article>
-</dialog> -->
-{/if}
+  </div>
+  <div class="side2">
+    <img src="{groupIllustration}" alt="">
+  </div>  
+</section>  
+
+
 <style lang="css">
-  
+  .about-section{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    margin-top: 120px;
+    border-radius: 50px;
+    background: #ffc600;
 
-  nav {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    text-align: center;
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #333;
-    }
-    a {
-      margin: 0 1rem;
-      color: #333;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+  }
+  span, h1, p{
+        color: #161615;
   }
 
-  h1 {
-    text-align: center;
-    margin-top: 2rem;
-  }
 
-  p {
-    text-align: center;
-    margin-top: 1rem;
+  .side1, .side2{
+    flex-grow: 1;
+    width: 50%;
   }
 
 </style>
