@@ -45,38 +45,22 @@
 			
 			</button>	
 			</a>
+			<details class="dropdown">
+  <summary>Menu</summary>
+  <ul>
+    <li><a href="#">Solid</a></li>
+    <li><a href="#">Liquid</a></li>
+    <li><a href="#">Gas</a></li>
+    <li><a href="#">Plasma</a></li>
+  </ul>
+</details>
 
 	<div class="socials" style="">
 				<img src="{meta}" alt="">
 			<img src="{insta}" alt="">
 			<img src="{linkedin}" alt="">
 	</div>
-	<div class="corner">
-		
-			<img src={menuBtn} alt="MenuToggle" class="menuBtn" on:click={() => showNav = !showNav} />
-			
-	
-	</div>
-		
-	</div>
 
-	{#if showNav}
-	<nav class="nav">
-		
-		<ul>
-	
-				<a href="/">Home</a>
-			
-			
-				<a href="/about">About</a>
-
-		
-				<a href="/services">What We Do</a>
-			
-		</ul>
-		
-	</nav>	
-	{/if}
 </header>
 
 <style>
@@ -200,6 +184,12 @@
 	}
 	.menuBtn{
 		display: none;
+	}
+	.dropdown{
+		margin-right: 15px;
+		height: min-content;
+		min-width: fit-content;
+		border-radius: 50px;
 	}
 
 	@media (max-width: 900px){
