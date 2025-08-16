@@ -13,8 +13,8 @@
       About Us
     </span>
     <h1>
-      Creative Powerhouse.
-      Strategic Partner.
+      Creative Powerhouse. <br/>
+      Strategic Partner. <br/>
       Impact Ally.
     </h1>  
     <p>

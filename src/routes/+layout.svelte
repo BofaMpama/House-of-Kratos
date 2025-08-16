@@ -26,7 +26,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
-<div class="container" style="">
+<div class="container" style="" data-theme="dark">
 	
 
 		<Header />
