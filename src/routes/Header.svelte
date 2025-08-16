@@ -190,6 +190,7 @@
 		height: min-content;
 		min-width: fit-content;
 		border-radius: 50px;
+		display: none;
 	}
 
 	@media (max-width: 900px){
@@ -201,6 +202,9 @@
 		}
 		.socials{
 			display: none;
+		}
+		.dropdown{
+			display: initial;
 		}
 	}
 
