@@ -1,5 +1,5 @@
 <script>
-  import groupIllustration from '$lib/assets/group.png';
+  import groupIllustration from '$lib/assets/working-team.png';
 
 </script>
 <link
@@ -25,6 +25,7 @@
     <img src="{groupIllustration}" alt="">
   </div>  
 </section>  
+
 
 
 <style lang="css">
