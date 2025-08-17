@@ -1,11 +1,14 @@
 <script>
+  import values from '$lib/data/values.json';
   import groupIllustration from '$lib/assets/group.png';
+  import bulbman from '$lib/assets/idea.png';
+  import workingBulbMen from '$lib/assets/teamwork.png';
+
+
+
+
 
 </script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
->
 
 <section class="about-section">
   <div class="side1">
@@ -24,7 +27,39 @@
   <div class="side2">
     <img src="{groupIllustration}" alt="">
   </div>  
-</section>  
+</section> 
+<section class="mv-section">
+
+  <div class="mv-container">
+
+      <div class="mv-box">
+      <img src="{bulbman}" alt="Our Vision">
+      <h2>Our Vision</h2>
+      <p>To lead a global movement of strategic and creative innovation, transforming lives and shaping culture.</p>
+ 
+    </div>
+  
+     <div class="mv-box">
+      <img src="{workingBulbMen}" alt="Our Mission">
+      <h2>Our Mission</h2>
+      <p>To partner with visionary leaders to unlock innovative strategies that spark sustainable change.</p>
+    </div>
+  </div>
+
+  </section> 
+  <section class="values-section">
+    <h2>Our Values</h2>
+    <p>House of Kratos isn’t just a name – it’s a mission. These are the values that shape who we are.</p>
+
+    <div class="values-container">
+    {#each values as value}
+      <div class="value-box">
+      <h3>{value.value}</h3>
+      <p>{value.description}</p>
+      </div>
+    {/each}
+    </div>
+  </section>
 
 
 
@@ -49,4 +84,73 @@
     width: 50%;
   }
 
+  .mv-section{
+    display: block;
+    margin-top: 200px;
+
+    h2{
+      font-size: 40px;
+      padding: 20px;
+    }
+  }
+  .mv-container{
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mv-box{
+    border: 2px solid #ffc600;
+    border-radius: 50px;
+    box-shadow: 8px 8px #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    transition: 0.5s;
+
+    img{
+      width: 200px;
+      height: 200px;
+    }
+
+    h2{
+      text-align: left;
+    }
+    p{
+      color: white;
+    }
+  }
+      .mv-box:hover{
+      	    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; padding: 0.8rem 1rem;
+            transform: translateY(-10px);
+
+    }
+    .values-section{
+            border: 2px solid #ffc600;
+            border-radius: 50px;
+            padding: 40px;
+            margin-top: 200px;
+    }
+    .values-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+    }
+    .value-box{
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+
+      h3{
+      font-size: 40px;
+      color: #ffc600;
+      }      
+      p{
+      color: aliceblue;
+      }
+    }
 </style>
