@@ -10,7 +10,7 @@
 
 
 	
-	let showNav = false;
+	let show = false;
 	
 </script>
 
@@ -51,10 +51,19 @@
 			<img src="{insta}" alt="">
 			<img src="{linkedin}" alt="">
 	</div>
-	<img src="{menuBtn}" alt="toggle button" class="menuBtn">
+	<button on:click={() => show = !show} class="menuBtn" style="background: transparent; border: none; display: flex; align-items: center;">
+		<img src="{menuBtn}" alt="toggle button" >
+	</button>
+	
 	</div>
 
 </header>
+<ul class:show={show}>
+	<a href="/" on:click={() => show = !show}>Home</a>
+	<a href="/about" on:click={() => show = !show}>About Us</a>
+	<a href="/services" on:click={() => show = !show}>What We Do</a>
+	<a href="/contact-us" on:click={() => show = !show}>Contact Us</a>
+</ul>
 
 <style>
 	header {
@@ -176,12 +185,34 @@
 	.menuBtn{
 		display: none;
 	}
-	.dropdown{
-		margin-right: 15px;
-		height: min-content;
-		min-width: fit-content;
-		border-radius: 50px;
+
+	ul{
 		display: none;
+	}
+	ul.show{
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		padding: 120px 30px 0 0;
+		position: fixed;
+		width: 400px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: #161615;
+		transition: 0.5s;
+		z-index: 1000;
+
+		a{
+			color: #fff;		
+			font-size: 40px;
+			padding-left: 40px;
+
+		}
+		
+	}
+	ul a:active{
+		text-decoration: underline;
 	}
 
 	@media (max-width: 900px){
@@ -190,8 +221,11 @@
 		}
 		.menuBtn{
 			display: initial;
-			width: 40px;
+			
+			img{
+				width: 40px;
 			height: 40px;
+			}
 		}
 		.socials{
 			display: none;
