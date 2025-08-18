@@ -182,7 +182,7 @@
     }
 
     .values-section{
-      padding: 10px;
+      padding: 20px;
     }
       .value-box{
         width: 100%;
