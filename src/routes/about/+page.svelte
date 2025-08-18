@@ -173,5 +173,11 @@
       .text-container h2, h3, p{
         text-align: center;
       }
+
+      .value-box{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
     }
 </style>
