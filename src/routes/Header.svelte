@@ -233,8 +233,8 @@
 		.socials{
 			display: none;
 		}
-		.menuBtn:hover{
-			opacity: 0.4;
+		.menuBtn:focus-within{
+	
 			scale: 1.3;
 		}
 
