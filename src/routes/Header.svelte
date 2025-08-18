@@ -51,7 +51,7 @@
 			<img src="{insta}" alt="">
 			<img src="{linkedin}" alt="">
 	</div>
-	<button on:click={() => show = !show} class="menuBtn" style="background: transparent; border: none; display: flex; align-items: center;">
+	<button on:click={() => show = !show} class="menuBtn" style="background: transparent; border: none; display: flex; align-items: center; width: fit-content; height: fit-content;">
 		<img src="{menuBtn}" alt="toggle button" >
 	</button>
 	
@@ -193,7 +193,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
-		padding: 120px 30px 0 0;
+		padding: 150px 30px 0 0;
 		position: fixed;
 		width: 400px;
 		height: 100%;
@@ -221,6 +221,9 @@
 		}
 		.menuBtn{
 			display: initial;
+			width: 40px;
+			height: 40px;
+			padding: 0;
 			
 			img{
 				width: 40px;
@@ -229,6 +232,10 @@
 		}
 		.socials{
 			display: none;
+		}
+		.menuBtn:hover{
+			opacity: 0.4;
+			scale: 1.3;
 		}
 
 	}
