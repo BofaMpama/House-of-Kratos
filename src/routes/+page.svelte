@@ -119,7 +119,8 @@ Impact Ally <span class="dot">.</span></h2>
 
 }
 .dot{
-  color: #ffc600;
+      color: transparent;
+        -webkit-text-stroke: 2px #ffc600;
 }
 
   .section2 li{
