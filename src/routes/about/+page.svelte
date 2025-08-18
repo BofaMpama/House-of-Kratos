@@ -170,14 +170,20 @@
       }
     }
     @media (max-width: 900px){
-      .text-container h2, h3, p{
+      .text-container {
+        h2, p{
         text-align: center;
       }
+    }
 
       .value-box{
         width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 0px;
+     
+        h3, p{
+          text-align: center;
+        }
       }
     }
 </style>
