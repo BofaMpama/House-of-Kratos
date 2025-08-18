@@ -170,6 +170,11 @@
       }
     }
     @media (max-width: 900px){
+      .mv-box{
+        h2{
+          text-align: center;
+        }
+      }
       .text-container {
         h2, p{
         text-align: center;
