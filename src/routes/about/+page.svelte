@@ -181,6 +181,9 @@
       }
     }
 
+    .values-section{
+      padding: 10px;
+    }
       .value-box{
         width: 100%;
         height: auto;
