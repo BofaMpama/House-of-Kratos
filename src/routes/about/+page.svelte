@@ -48,9 +48,11 @@
 
   </section> 
   <section class="values-section">
-    <h2>Our Values</h2>
+  <div class="text-container">
+      <h2>Our Values</h2>
     <p>House of Kratos isn’t just a name – it’s a mission. These are the values that shape who we are.</p>
 
+  </div>
     <div class="values-container">
     {#each values as value}
       <div class="value-box">
@@ -135,6 +137,18 @@
             padding: 40px;
             margin-top: 200px;
     }
+    .text-container{
+      padding-top: 40px;
+
+      h2{
+        font-size: 60px;
+        color: transparent;
+        -webkit-text-stroke: 2px #ffc600;
+      }
+      p{
+        color: white;
+      }
+    }
     .values-container{
             display: flex;
             flex-wrap: wrap;
@@ -145,14 +159,19 @@
     .value-box{
       width: 300px;
       height: 300px;
-      padding: 20px;
+      padding: 40px 0 0 0;
 
       h3{
-      font-size: 40px;
+      font-size: 30px;
       color: #ffc600;
       }      
       p{
       color: aliceblue;
+      }
+    }
+    @media (max-width: 900px){
+      .text-container h2, h3, p{
+        text-align: center;
       }
     }
 </style>
