@@ -71,7 +71,7 @@
 		justify-content: space-between;
 		gap: 20px;
         background: rgba(100, 100, 100, 0.2);
-		box-shadow: rgba(163, 128, 128, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; padding: 0.8rem 1rem;
 		backdrop-filter: blur(12px);
         border-radius: 50px;
         margin: 1em;
