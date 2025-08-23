@@ -1,0 +1,34 @@
+[
+    {
+        "icon": "💡",
+        "title": "Creative Strategy",
+        "description": "We help you craft a clear, compelling roadmap that aligns your brand’s goals with powerful storytelling, messaging, and design.",
+        "link": "/services/creative-strategy"
+    },
+     {
+        "icon": "💡",
+        "title": "Social Impact Strategy",
+        "description": "We work with NGOs, foundations, and social enterprises to build strategies that amplify their mission, mobilize support, and maximize their impact.",
+        "link": "/services/creative-strategy"
+    },
+     {
+      
+        "icon": "💡",
+        "title": "Brand Strategy",
+        "description": "From positioning to visual identity, we help you build a brand that people remember, connect with, and trust.",
+        "link": "/services/creative-strategy"
+    },
+        {
+        
+        "icon": "💡",
+        "title": "Strategic Social Oversight",
+        "description": "We work alongside your in-house team to guide, sharpen, and align your content with your brand goals. From planning to feedback, we provide creative and strategic direction - so your team executes confidently and consistently.",
+        "link": "/services/creative-strategy"
+        }, 
+        {
+        "icon": "💡",
+        "title": "Content Strategy & Development",
+        "description": "We craft content that doesn’t just sound good - it drives real action. From campaigns to copywriting, we help you tell your story well.",
+        "link": "/services/creative-strategy"
+        }
+]

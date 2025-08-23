@@ -4,15 +4,6 @@
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import Carousel from '$lib/components/Carousel.svelte';
 
-
- 
-
-    const questions = [
-      {question: "What kind of brands do you work with?",
-       answer: "We work with people-focused, impact-driven brands – especially social enterprises, NGOs, foundations, and innovative startups that care deeply about transforming lives and communities."
-      }
-    ];
-
 </script>
 
 
@@ -113,10 +104,6 @@ Impact Ally <span class="dot">.</span></h2>
   display: flex;
   margin-top: 200px;
   gap: 20px;
-
-
-
-
 }
 .dot{
       color: transparent;
