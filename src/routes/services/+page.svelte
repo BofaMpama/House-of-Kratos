@@ -34,8 +34,11 @@
 
 
   h2 {
-    text-align: center;
-    margin-top: 5rem;
+        font-size: 60px;
+        color: transparent;
+        -webkit-text-stroke: 2px #ffc600;
+        margin-top: 5rem;
+        text-align: center;
   }
 
   p {

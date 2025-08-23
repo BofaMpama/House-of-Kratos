@@ -4,13 +4,13 @@
   import bulbman from '$lib/assets/idea.png';
   import workingBulbMen from '$lib/assets/teamwork.png';
 
-
-
+  
 
 
 </script>
 
-<section class="about-section">
+
+  <section class="about-section">
   <div class="side1">
     <span>
       About Us
@@ -28,6 +28,7 @@
     <img src="{groupIllustration}" alt="">
   </div>  
 </section> 
+
 <section class="mv-section">
 
   <div class="mv-container">
