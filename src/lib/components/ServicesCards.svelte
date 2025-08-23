@@ -17,28 +17,23 @@
 
 <style>
 
-    .services {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
     .card {
-      background: #222120;
+      background: transparent;
       border-radius: 16px;
       padding: 35px;
       width: 400px;
       border: 2px solid #ffc600;
       border-radius: 50px;
       box-shadow: 8px 8px #000000;
-      transition: all 0.3s ease;
+      transition: all 0.9s ease;
       cursor: pointer;
+      position: relative;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 25px rgba(251, 255, 0, 0.4);
+    .card:hover{
+      	    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+            transform:rotate3d(1, 1, 0, 10deg);
+
     }
 
     .icon {
@@ -74,7 +69,7 @@
       color: #fff;
     }
 
-    
+
     @media (max-width: 450px) {
       .card {
         width: 100%;
