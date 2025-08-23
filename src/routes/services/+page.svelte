@@ -33,7 +33,7 @@
 
 
 
-  h1 {
+  h2 {
     text-align: center;
     margin-top: 5rem;
   }
@@ -57,4 +57,6 @@
     gap: 60px;
     margin-top: 2rem;
   }
+
+  
 </style>

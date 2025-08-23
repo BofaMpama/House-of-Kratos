@@ -73,4 +73,13 @@
     .learn-more:hover {
       color: #fff;
     }
+
+    
+    @media (max-width: 450px) {
+      .card {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+
 </style>
