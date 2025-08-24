@@ -31,7 +31,11 @@
 
 <style lang="css">
 
-
+  body{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
 
   h2 {
         font-size: 60px;
@@ -51,14 +55,17 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+
   }
 
   .cards-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
-    margin-top: 2rem;
+    position: relative;
+    top: 15%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   

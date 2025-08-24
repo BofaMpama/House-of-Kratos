@@ -18,16 +18,18 @@
 <style>
 
     .card {
-      background: transparent;
+      background: none;
       border-radius: 16px;
       padding: 35px;
-      width: 400px;
-      border: 2px solid #ffc600;
+      width: 100%;
+      height: 80dvh;
       border-radius: 50px;
-      box-shadow: 8px 8px #000000;
       transition: all 0.9s ease;
       cursor: pointer;
-      position: relative;
+      position: sticky;
+      top: 20dvh;
+      margin-bottom: 4em;
+      scroll-snap-align:  start;
     }
 
     .card:hover{
@@ -69,6 +71,21 @@
       color: #fff;
     }
 
+    .card:nth-child(1){
+      background: #e3f2fd;
+    }
+    .card:nth-child(2){
+      background: #fce4ec;
+    }
+    .card:nth-child(3){
+      background: #e8f5e9;
+    }
+    .card:nth-child(4){
+      background: #fff3e0;
+    }
+    .card:nth-child(4){
+      background: #f3e5f5;
+    }
 
     @media (max-width: 450px) {
       .card {

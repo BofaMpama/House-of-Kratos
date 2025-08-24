@@ -4,12 +4,28 @@
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import Carousel from '$lib/components/Carousel.svelte';
 
+  export let services = "services";
+  export let text1 = "Creative Strategy";
+  export let text2 = "Brand Strategy";
+  export let text3 = "Content Strategy & Development";
+  export let text4 = "Social Impact Strategy";
+  export let text5 = "Strategic Social Oversight";
+
+
+  let x = 0, y = 0;
+
+  function move(e){
+    x = e.clientX;
+    y = e.clientY;
+  }
 </script>
 
 
 <link rel="stylesheet" href="../header.css">
 <link href="https://fonts.googleapis.com/css2?family=Milkyway&display=swap" rel="stylesheet">
 
+<div class="cursor" style="left: {x}px; top: {y}px;"></div>
+<svelte:window on:mousemove={move} />
 
 <div class="section0" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100dvh; border-radius: 50px;  gap: 40px; ">
   <span>Ideate. Connect. Create.</span>
@@ -49,6 +65,18 @@ Impact Ally <span class="dot">.</span></h2>
   <Carousel />
 </div>
 
+<section class="scroll-section">
+  <div class="track0">
+    <span>{text1}   //   {text2}   //   {text3}   //   {text4}   //   {text5}  //  </span>
+    <span>{text1}   //   {text2}   //   {text3}   //   {text4}   //   {text5}  //  </span>
+  </div>
+  <div class="track1">
+    <span>{text1}   //   {text2}   //   {text3}   //   {text4}   //   {text5}  //  </span>
+    <span>{text1}   //   {text2}   //   {text3}   //   {text4}   //   {text5}  //  </span>
+    
+  </div>
+</section>
+
 <section class="section4">
     <div class="side1">
     
@@ -77,6 +105,22 @@ Impact Ally <span class="dot">.</span></h2>
 
 
 <style lang="css">
+  *{
+    cursor:crosshair;
+  }
+  .cursor{
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #ffc600;
+    background: #ffc600;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.9s ease;
+    box-shadow:  0 010px #161615, 0 0 20px #ffc600;
+    z-index: 999999;
+  }
 
 
 .section0{
@@ -148,6 +192,41 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 .section3{
   width: 100%;
   margin: 200px 0 200px 0;
+  display: none;
+}
+section.scroll-section{
+  padding: 200px 0 200px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.track0{
+  display: inline-flex;
+  animation: scroll 10s linear infinite reverse;
+}
+.track0 span{
+  color: #fff;
+  font-size: 20px;
+}
+.track1{
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+}
+.track1 span{
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffc600;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
 }
 
 .section4{
