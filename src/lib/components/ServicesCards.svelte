@@ -83,7 +83,7 @@
     .card:nth-child(4){
       background: #fff3e0;
     }
-    .card:nth-child(4){
+    .card:nth-child(5){
       background: #f3e5f5;
     }
 
